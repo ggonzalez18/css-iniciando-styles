@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen" type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            margin: 25px 200px;
+            text-align: center;
+        }
+
+        .container_bandera {
+            width: 400px;
+            height: 250px;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        /* inicio españa */
+        .rojo {
+            width: 100%;
+            height: 70px;
+            background-color: red;
+        }
+
+        .amarillo {
+            width: 100%;
+            height: 110px;
+            background-color: yellow;
+        }
+
+        /* fin españa */
+        /* dinamarca */
+        .fondo_rojo {
+            background-color: red;
+            width: 400px;
+            height: 250px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blanco_horizontal {
+            margin-top: 100px;
+            background-color: white;
+            width: 400px;
+            height: 25px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .blanco_vertical {
+            background-color: white;
+            height: 250px;
+            width: 25px;
+            position: absolute;
+            margin-left: 100px;
+            z-index: 3;
+        }
+
+        /* fin dinamarca */
+
+        /* emiratos arabes */
+        .rojo_vertical {
+            height: 250px;
+            width: 100px;
+            display: block;
+            background-color: red;
+            float: left;
+        }
+
+        .verde_horizontal {
+            width: 300px;
+            height: 83px;
+            background-color: green;
+            float: right;
+
+        }
+
+        .white_horizontal {
+            width: 300px;
+            height: 83px;
+            background-color: white;
+            float: right;
+        }
+
+        .negro_horizontal {
+            width: 300px;
+            height: 83px;
+            background-color: black;
+            float: right;
+        }
+
+        /* fin emiratos arabes */
+
+        .japon {
+            width: 130px;
+            height: 130px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background: red;
+            margin: 55px 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container_bandera">
+            <div class="rojo"></div>
+            <div class="amarillo"></div>
+            <div class="rojo"></div>
+        </div>
+
+
+        <div class="container_bandera">
+            <div class="fondo_rojo">
+                <div class="blanco_vertical"></div>
+                <div class="blanco_horizontal"></div>
+            </div>
+        </div>
+
+
+        <div class="container_bandera">
+            <div class="rojo_vertical"></div>
+            <div class="verde_horizontal"></div>
+            <div class="white_horizontal"></div>
+            <div class="negro_horizontal"></div>
+        </div>
+
+
+        <div class="container_bandera">
+            <div class="japon"></div>
+        </div>
+    </section>
+</body>
+
+</html>
